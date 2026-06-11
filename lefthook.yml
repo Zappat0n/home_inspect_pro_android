@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    test:
+      glob: "*"
+      run: mise exec -- ./gradlew :app:testDebugUnitTest --console=plain
+
+pre-push:
+  commands:
+    test-all:
+      glob: "*"
+      run: mise exec -- ./gradlew :app:testDebugUnitTest --console=plain
