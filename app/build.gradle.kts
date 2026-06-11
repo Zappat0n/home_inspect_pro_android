@@ -61,6 +61,14 @@ dependencies {
         exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
         exclude(group = "org.jetbrains.kotlin", module = "kotlin-reflect")
     }
+    implementation("dev.hotwire:navigation-fragments:1.2.8") {
+        exclude(group = "androidx.core", module = "core-ktx")
+        exclude(group = "androidx.core", module = "core")
+        exclude(group = "androidx.activity", module = "activity-ktx")
+        exclude(group = "androidx.activity", module = "activity")
+        exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
+        exclude(group = "org.jetbrains.kotlin", module = "kotlin-reflect")
+    }
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")

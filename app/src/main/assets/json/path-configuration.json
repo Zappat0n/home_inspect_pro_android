@@ -1,4 +1,11 @@
 {
-  "rules": [],
-  "settings": {}
+  "settings": {},
+  "rules": [
+    {
+      "patterns": [".*"],
+      "properties": {
+        "presentation": "default"
+      }
+    }
+  ]
 }
