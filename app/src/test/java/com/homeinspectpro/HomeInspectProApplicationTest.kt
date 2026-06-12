@@ -36,6 +36,14 @@ class HomeInspectProApplicationTest {
     }
 
     @Test
+    fun `signature bridge component is registered`() {
+        Robolectric.buildActivity(MainActivity::class.java).setup().get()
+        val factories = Hotwire.config.registeredBridgeComponentFactories
+        val signatureFactory = factories.find { it.name == "signature" }
+        assertNotNull("SignatureBridge should be registered", signatureFactory)
+    }
+
+    @Test
     fun `path configuration is loaded`() {
         Robolectric.buildActivity(MainActivity::class.java).setup().get()
         val pathConfig = Hotwire.config.pathConfiguration
