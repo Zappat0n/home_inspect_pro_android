@@ -1,0 +1,3 @@
+-keepattributes *Annotation*
+-keep class dev.hotwire.** { *; }
+-dontwarn kotlinx.serialization.**
