@@ -13,6 +13,10 @@ local.properties
 # macOS
 .DS_Store
 
+# Signing
+*.keystore
+keystore.properties
+
 # Testing
 *.hprof
 *.log
